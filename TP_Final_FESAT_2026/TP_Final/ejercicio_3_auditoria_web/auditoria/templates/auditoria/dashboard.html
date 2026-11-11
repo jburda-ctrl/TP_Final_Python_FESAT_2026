@@ -1,0 +1,6 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><title>SmartWater Analytics</title><style>body{font-family:system-ui;padding:32px}table{border-collapse:collapse}td,th{border:1px solid #ccc;padding:8px 12px}</style></head>
+<body><h1>SmartWater Analytics - Dashboard Agua</h1>
+<p><strong>Costo total global:</strong> ${{ costo_total|floatformat:2 }}</p>
+<p><strong>Planta critica (mayor consumo):</strong> {{ planta_critica }}</p>
+<table><tr><th>Planta</th><th>Consumo (L)</th></tr>{% for reg in lista_registros %}<tr><td>{{ reg.planta }}</td><td>{{ reg.consumo }}</td></tr>{% endfor %}</table>
+<p><small>Datos simulados desde CSV (datos_consumo.csv). Alternativas: JSON o diccionario en utils.cargar_datos()</small></p></body></html>

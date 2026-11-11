@@ -1,0 +1,6 @@
+sensor_id,temperatura,ubicacion
+ SEN-001 ,78.5,Planta Textil Norte
+SEN-002,92.3,Destileria Sur
+,105.0,
+SEN-004,no-numerico,Sede Central
+SEN-005,65.0,  
